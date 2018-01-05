@@ -24,7 +24,8 @@ export class ItemDetailComponent  {
 
   createForm(data) {
     this.form = this.fb.group({
-      _id: data._id,
+      id: data.id,
+      index: data.index,
       name: [data.name, Validators.required], 
       isActive: [data.isActive, Validators.required],
       description: [data.description, Validators.required]
@@ -32,6 +33,7 @@ export class ItemDetailComponent  {
   }
   item(el){
     this.dialogRef.close(el)
+    console.log(el);
   }
   
 

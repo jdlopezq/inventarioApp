@@ -44,11 +44,15 @@ export class ItemListComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-    this.data.getItems().subscribe(data => {
-      this.items = data;
-    });
     this.dataSource = new MatTableDataSource();
-    this.dataSource.data = this.items;
+    this.data.getItems().subscribe(data => {
+      console.log(data)
+      this.items = data;
+      this.dataSource.data = this.items;
+    });
+ 
+
+  
 
     Observable.fromEvent(this.filterItem.nativeElement, 'keyup')
       .debounceTime(150)
@@ -56,7 +60,7 @@ export class ItemListComponent implements OnInit, AfterViewInit {
       .subscribe(() => {
         if (!this.dataSource) { return; }
         this.dataSource.filterPredicate = (data: Element, filter: string) => {
-          return data.name == filter
+          return data.name.toLowerCase().includes(filter.toLowerCase());
         }
         this.dataSource.filter = this.filterItem.nativeElement.value
       });
@@ -66,7 +70,7 @@ export class ItemListComponent implements OnInit, AfterViewInit {
       .subscribe(() => {
         if (!this.dataSource) { return; }
         this.dataSource.filterPredicate = (data: Element, filter: string) => {
-          return data.description == filter
+          return data.description.toLowerCase().includes(filter.toLowerCase());
         }
         this.dataSource.filter = this.filterDescription.nativeElement.value
       });

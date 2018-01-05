@@ -16,7 +16,8 @@ import {
     MatOptionModule,
     MatSelectModule,
     MatInputModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatSnackBarModule
     
    
     
@@ -40,7 +41,8 @@ import {MatMenuModule} from '@angular/material/menu';
         MatOptionModule,
         MatSelectModule,
         MatInputModule,
-        MatSlideToggleModule
+        MatSlideToggleModule,
+        MatSnackBarModule
        ],
     exports: [MatButtonModule,
         MatCheckboxModule,
@@ -59,7 +61,8 @@ import {MatMenuModule} from '@angular/material/menu';
         MatOptionModule,
         MatSelectModule,
         MatInputModule,
-        MatSlideToggleModule
+        MatSlideToggleModule,
+        MatSnackBarModule
     ],
     providers: [],
 })
