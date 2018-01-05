@@ -24,8 +24,12 @@ export class AppComponent {
 
     dialogRef.afterClosed().subscribe(result => {
       if(result) {
-        if(result.id) this.dataService.editItem(result);
-        else this.newIt(result) 
+        this.dataService.editItem(result);
+        this.openSnackBar("Item updated", "Ok");
+      }
+      else  {
+        this.newIt(result);
+        this.openSnackBar("Item added", "Ok");
       }
       console.log(result);
      
