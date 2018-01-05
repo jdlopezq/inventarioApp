@@ -17,9 +17,10 @@ import {
     MatSelectModule,
     MatInputModule,
     MatSlideToggleModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatProgressBarModule
     
-   
+
     
 } from '@angular/material';
 import {FormsModule} from '@angular/forms'
@@ -42,7 +43,8 @@ import {MatMenuModule} from '@angular/material/menu';
         MatSelectModule,
         MatInputModule,
         MatSlideToggleModule,
-        MatSnackBarModule
+        MatSnackBarModule,
+        MatProgressBarModule
        ],
     exports: [MatButtonModule,
         MatCheckboxModule,
@@ -62,7 +64,8 @@ import {MatMenuModule} from '@angular/material/menu';
         MatSelectModule,
         MatInputModule,
         MatSlideToggleModule,
-        MatSnackBarModule
+        MatSnackBarModule,
+        MatProgressBarModule
     ],
     providers: [],
 })

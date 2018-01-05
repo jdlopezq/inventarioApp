@@ -32,7 +32,7 @@ export class DataService implements OnInit {
   }
   
   addItem(il: Element) {
-    console.log(il);
+    console.log("entro al AddItem");
     il.index = this.items.length;
     this.http.post(this.dataHttp, il).map(response => response.json()).subscribe(res => {
       this.httpCall();
