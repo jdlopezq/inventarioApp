@@ -66,7 +66,7 @@
     {
       "description": "Duis officia fugiat incididunt aliquip fugiat ex est aute aliqua nulla nulla velit magna. Consectetur anim labore sunt sunt id. Commodo elit voluptate magna id esse minim consectetur proident est sit proident. Exercitation aliquip ut minim incididunt.",
       "name": "Goodman",
-      "status": "green",
+      "status": "active",
       "isActive": false,
       "index": 8,
       "_id": "5a4dd5a0eeb16e09f1fd3c8e"
@@ -458,7 +458,7 @@
     {
       "description": "Est ut ad dolore duis consectetur fugiat voluptate sit irure cillum Lorem aliquip. Non duis enim irure ut consectetur laborum laboris velit culpa cupidatat occaecat laboris. Irure magna Lorem consectetur nisi voluptate officia sit consectetur consectetur ex elit incididunt fugiat nostrud.",
       "name": "Ryan",
-      "status": "green",
+      "status": "active",
       "isActive": false,
       "index": 57,
       "_id": "5a4dd5a1ca18e4782cfd0c02"
@@ -466,7 +466,7 @@
     {
       "description": "Ex ex ea do officia veniam eu dolore do laboris et in nisi. Eu occaecat officia aliqua ea fugiat sint non consequat nulla velit reprehenderit sit. Minim commodo laborum nulla commodo enim.",
       "name": "Koch",
-      "status": "blue",
+      "status": "active",
       "isActive": false,
       "index": 58,
       "_id": "5a4dd5a1cd4618aebe0e0bdd"
@@ -474,7 +474,7 @@
     {
       "description": "Velit irure non dolor officia qui. Adipisicing qui amet amet tempor excepteur nisi nisi velit velit ipsum labore commodo qui. Enim adipisicing eu ad in. Ullamco velit commodo do ad voluptate non non do nostrud ipsum velit sit ea. Qui magna enim culpa excepteur ex aliqua elit.",
       "name": "Dickerson",
-      "status": "brown",
+      "status": "active",
       "isActive": false,
       "index": 59,
       "_id": "5a4dd5a11a85176a60034591"
@@ -482,7 +482,7 @@
     {
       "description": "Anim aute laborum cupidatat do culpa dolore sint officia Lorem dolore nisi est. Id cillum tempor proident enim minim id ullamco occaecat sint commodo. Reprehenderit culpa commodo excepteur velit. Nulla culpa nulla ex quis adipisicing irure. Enim voluptate consequat laboris esse. Ut laborum sint ad dolore do aute. Ea aute velit elit occaecat dolore magna proident minim Lorem qui ullamco aliqua sit.",
       "name": "Richards",
-      "status": "green",
+      "status": "active",
       "isActive": false,
       "index": 60,
       "_id": "5a4dd5a1d1b267297120f2a8"
@@ -490,7 +490,7 @@
     {
       "description": "Magna ex ullamco sint sunt aliquip sint reprehenderit nulla do ut ea. Non nisi aliqua qui Lorem. Culpa enim velit amet eu eiusmod ipsum exercitation ut ut ipsum dolore.",
       "name": "Little",
-      "status": "blue",
+      "status": "active",
       "isActive": true,
       "index": 61,
       "_id": "5a4dd5a1f7b12e6ffb152f7a"
@@ -498,7 +498,7 @@
     {
       "description": "Sunt elit elit eiusmod dolor fugiat labore laborum dolore ipsum ad est. Aliquip amet qui sit eu deserunt elit adipisicing qui sit cillum irure esse ea. Proident pariatur officia anim deserunt anim nisi ut enim irure. Est dolor velit cupidatat laboris minim incididunt exercitation occaecat cupidatat. Duis magna consequat aliqua est exercitation. Consequat dolore elit culpa ipsum Lorem tempor incididunt minim ea ea nulla elit dolore.",
       "name": "Mullins",
-      "status": "brown",
+      "status": "active",
       "isActive": true,
       "index": 62,
       "_id": "5a4dd5a11eeed7a6f1c4c0ef"

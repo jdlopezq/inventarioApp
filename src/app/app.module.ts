@@ -8,6 +8,7 @@ import { ItemListComponent } from './item-list/item-list.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { ItemDetailComponent } from './item-detail/item-detail.component'
 import {DataService} from "./data.service"
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -21,9 +22,13 @@ import {DataService} from "./data.service"
   imports: [
     BrowserModule,
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+
+  
+}

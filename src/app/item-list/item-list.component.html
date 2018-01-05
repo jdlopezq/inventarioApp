@@ -1,0 +1,61 @@
+<div>
+    <mat-toolbar>
+        <mat-form-field>
+            <input matInput #filterItem placeholder="Filter by Items">
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput #filterDescription placeholder="Filter by Description">
+        </mat-form-field>
+    </mat-toolbar>
+</div>
+
+<div>
+
+
+
+    <mat-table #table [dataSource]='dataSource' matSort>
+
+        <!--- Note that these columns can be defined in any order.
+            The actual rendered columns are set as a property on the row definition" -->
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+        </ng-container>
+
+        <!-- Status Column -->
+        <ng-container matColumnDef="status">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Status </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.isActive}} </mat-cell>
+        </ng-container>
+
+        <!-- Description Column -->
+        <ng-container matColumnDef="description">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Description </mat-header-cell>
+            <mat-cell *matCellDef="let element"> {{element.description}} </mat-cell>
+        </ng-container>
+        <!-- Options Column -->
+        <ng-container matColumnDef="options">
+            <mat-header-cell *matHeaderCellDef mat-sort-header> Options </mat-header-cell>
+            <mat-cell *matCellDef="let element">
+                <button mat-icon-button (click)='editItem(element)'>
+                    <i class="material-icons">edit</i>
+                </button>
+                <button mat-icon-button (click)='deleteItem(element)'>
+                    <i class="material-icons">delete</i>
+                </button>
+
+            </mat-cell>
+        </ng-container>
+
+
+
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+
+    <mat-paginator (page)="pagChanges($event)" #paginator [length]="100" [pageIndex]="0" [pageSize]="25" [pageSizeOptions]="[5, 10, 25, 100]">
+    </mat-paginator>
+</div>

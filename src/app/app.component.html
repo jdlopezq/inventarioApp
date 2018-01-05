@@ -1,25 +1,21 @@
+<mat-toolbar>
+    <span>Inventario</span>
+    <span class="spacer"></span>
+    Nuevo Item
+    <button mat-icon-button (click)='openDialog($event)'>
+        <i class="material-icons">note_add</i>
+    </button>
 
-    <mat-toolbar>Inventario</mat-toolbar>
-    <div fxLayout="row">
-        <div fxFlex>
-                {{'Productos'}}
-            <app-item-list></app-item-list>
-        </div>
-        <div fxFlex>
-                {{'Detalles'}}    
-            <router-outlet></router-outlet>
-        </div>
-        <div fxFlex>
-                {{'Estado'}}    
-            <router-outlet></router-outlet>
-            
-        </div>
-        <div fxFlex>
-                {{'Opciones'}}    
-            <router-outlet></router-outlet>
-            <button mat-icon-button><mat-icon>create</mat-icon></button>
-            <button mat-icon-button><mat-icon>delete</mat-icon></button>
-        </div>
-        
+    <button mat-button [matMenuTriggerFor]="menu" xPosition='after'>
+        Menu
+        <i class="material-icons">menu</i>
+    </button>
 
-    </div>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>Salir</button>
+    </mat-menu>
+</mat-toolbar>
+
+<div>
+    <app-item-list (edited)="edit($event)" (delete)="delete($event)"> </app-item-list>
+</div>
